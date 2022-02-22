@@ -478,8 +478,8 @@ const Home = (props: HomeProps) => {
                                rel="noopener noreferrer">Shop</a></li>
                         <li><a href="https://funguy.club/whitelist" target="_blank"
                                rel="noopener noreferrer">whitelist info</a></li>
-                         <li><a href="https://frontend-5ot5kr4g2-funguyz1.vercel.app/" target="_blank"
-                               rel="noopener noreferrer">BASIC MEMBERSHIP</a></li>
+                         <li><a href="https://frontend-e6qle0m0j-funguyz1.vercel.app/" target="_blank"
+                               rel="noopener noreferrer">VIP MEMBERSHIP</a></li>
                     </Menu>
                     <Wallet>
                         {wallet ?
@@ -487,19 +487,19 @@ const Home = (props: HomeProps) => {
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
-                <ShimmerTitle>WHITELISTED VIP MINTING AVAILABLE NOW</ShimmerTitle>
+                <ShimmerTitle>WHITELISTED BASIC MINTING AVAILABLE LATER TODAY</ShimmerTitle>
                 <br/>
 
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>Funguys VIP Membership!</h2>
-                            <h2><a href="https://frontend-5ot5kr4g2-funguyz1.vercel.app/" target="_blank"
-                               rel="noopener noreferrer">CLICK HERE FOR BASIC NFT</a></h2>
+                            <h2>Funguys BASIC Membership!</h2>
+                            <h2><a href="https://frontend-e6qle0m0j-funguyz1.vercel.app/" target="_blank"
+                               rel="noopener noreferrer">CLICK HERE FOR VIP NFT</a></h2>
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
-                                src="VIP.gif"
+                                src="BASIC.gif"
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) &&
@@ -569,7 +569,17 @@ const Home = (props: HomeProps) => {
                     </DesContainer>
 
                     <DesContainer>
-                            <Des elevation={2}>
+                        <Des elevation={2}>
+                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>BASIC MEMBERSHIP</GoldTitle></LogoAligner>
+                            <p>Basic membership: 0.5 sol.</p>
+                            <p>The basic membership NFTs will be a collection of 6969 unique, computer generated Funguys,</p>
+                            <p>on a plain pastel background. All the same physical appearance traits are available</p>
+                            <p>on the basic NFT collection, except the basic collection backgrounds are all one solid colour.</p>
+                            <p>Holding a basic membership will entitle you to access all the basic features, resources, community,</p>
+                            <p>games etc on all Funguys and shroomery.eth projects, including the ability to work with us as DJ</p>
+                            <p>or writer or content creator etc, you will not need a VIP membership to participate fully in the community.</p>
+                        </Des>
+                        <Des elevation={2}>
                             <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>VIP MEMBERSHIP</GoldTitle></LogoAligner>
                             <p>VIP membership: 2 sol.</p>
                             <p>The VIP membership NFTs will be a collection of 1691 unique, computer generated Funguys,</p>
@@ -582,17 +592,7 @@ const Home = (props: HomeProps) => {
                             <p>(advertising percentages will be finalized when advertising is able to start).</p>
                             <p>VIP members will also have special access to features and articles before they are available to basic members.</p>
                         </Des>
-                        <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>BASIC MEMBERSHIP</GoldTitle></LogoAligner>
-                            <p>Basic membership: 0.5 sol.</p>
-                            <p>The basic membership NFTs will be a collection of 6969 unique, computer generated Funguys,</p>
-                            <p>on a plain pastel background. All the same physical appearance traits are available</p>
-                            <p>on the basic NFT collection, except the basic collection backgrounds are all one solid colour.</p>
-                            <p>Holding a basic membership will entitle you to access all the basic features, resources, community,</p>
-                            <p>games etc on all Funguys and shroomery.eth projects, including the ability to work with us as DJ</p>
-                            <p>or writer or content creator etc, you will not need a VIP membership to participate fully in the community.</p>
-                        </Des>
-                    
+
                     </DesContainer>
                 </MintContainer>
             </MainContainer>
